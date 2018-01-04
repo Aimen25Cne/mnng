@@ -34,7 +34,7 @@ const http = require('http');
   })
 
   //Stop miner
-  //setTimeout(async () => await miner.stop(), 30000);
+  //setTimeout(async () => await miner.stop(), 650000);
  function sleepThenAct(){ sleepFor(30000); console.log("hello js s!"); }
 
 })();
