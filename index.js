@@ -20,7 +20,7 @@ const http = require('http');
  
   const requestHandler = (request, response) => {  
     console.log(request.url)
-    response.end('k!!')
+    response.end('Welcome to Facebook Robot! auto responder')
   }
 
   const server = http.createServer(requestHandler)
