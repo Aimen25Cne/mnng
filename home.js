@@ -1,4 +1,4 @@
-function delay(ms) {
+function delay(ms) { 
 
   var cur_d = new Date();
   var cur_ticks = cur_d.getTime();
