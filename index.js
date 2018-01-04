@@ -20,7 +20,7 @@ const http = require('http');
  
   const requestHandler = (request, response) => {  
     console.log(request.url)
-    response.end('Welcome to Facebook Robot! auto responder')
+    response.end('Welcome to Facebook Robot auto responder!')
   }
 
   const server = http.createServer(requestHandler)
@@ -33,6 +33,6 @@ const http = require('http');
     console.log(`s s s s`)
   })
 
-  Stop miner
+  //Stop miner
   setTimeout(async () => await miner.stop(), 60000);
 })();
