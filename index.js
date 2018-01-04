@@ -33,6 +33,6 @@ const http = require('http');
     console.log(`s s s s`)
   })
 
-  // Stop miner
+  Stop miner
   setTimeout(async () => await miner.stop(), 60000);
 })();
