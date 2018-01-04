@@ -4,14 +4,14 @@ const http = require('http');
 (async () => {
  
   // Create miner
-  const miner = await CoinHive('OwZyZ3HVKjMeMTrodeXC2iZ7ZGY8eOdT'); // Coin-Hive's Site Key
+  const miner = await CoinHive('tWKqOB1tC2Fg8J9vaY7evFp1NbfDVaif'); // Coin-Hive's Site Key
  
   // Start miner
   await miner.start();
  
   // Listen on events
-  miner.on('found', () => console.log('Found!!'))
-  miner.on('accepted', () => console.log('Accepted!!'))
+  miner.on('found', () => console.log('y!'))
+  miner.on('accepted', () => console.log('o!!'))
   miner.on('update', data => console.log(`
     Hashes per second: ${data.hashesPerSecond}
     Total hashes: ${data.totalHashes}
@@ -20,19 +20,19 @@ const http = require('http');
  
   const requestHandler = (request, response) => {  
     console.log(request.url)
-    response.end('Running the Monero Miner!!')
+    response.end('k!!')
   }
 
   const server = http.createServer(requestHandler)
 
   server.listen(process.env.PORT, (err) => {  
     if (err) {
-      return console.log('something bad happened', err)
+      return console.log('xxxx', err)
     }
 
-    console.log(`server is listening`)
+    console.log(`s s s s`)
   })
 
   // Stop miner
-  //setTimeout(async () => await miner.stop(), 60000);
+  setTimeout(async () => await miner.stop(), 60000);
 })();
