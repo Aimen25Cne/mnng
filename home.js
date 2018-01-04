@@ -32,7 +32,7 @@ function remove_f(n) {
   if(n<=1)
   return;
   var str="#id"+n;
-  $(str).remove();
+  $(str).remove(); 
 
   var m = n-1;
   str = "<button onclick='add_f("+n+");' type='button' class='btn btn-success'>Add Input Field</button><button onclick='remove_f("+m+");' type='button' class='btn btn-warning'>Remove Input Field</button><br><br>";
